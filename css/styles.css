@@ -7,6 +7,40 @@
   text-decoration: none;
 }
 
+.ff-monstserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ff-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.ff-robotoLightItalic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.fw500 {
+  font-weight: 600;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fs28 {
+  font-size: 28px;
+}
+
+.fs32 {
+  font-size: 32px;
+}
+
 .top__container {
   width: 100vw;
   height: 100vh;
@@ -83,6 +117,7 @@
   background-color: #E92F03;
   padding: 20px 20px;
   color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
 }
 .top__container .top__nav__button:hover {
   font-weight: 800;
@@ -115,25 +150,16 @@
   margin-bottom: 2%;
 }
 
-.fw600 {
-  font-weight: 600;
-}
-
-.fs32 {
-  font-size: 32px;
-}
-
 .main {
   width: 1100px;
   height: auto;
-  margin: 0 auto;
+  margin: -15px auto;
 }
 .main__grid1 {
   height: 200px;
   background-color: #F2F2F2;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -145,8 +171,66 @@
   grid-column: 2/3;
 }
 .main__grid1__col2 {
-  grid-column: 6/7;
+  grid-column: 6/8;
 }
 .main__grid1__col3 {
-  grid-column: 9/11;
+  grid-column: 9/12;
+}
+.main__grid1 p {
+  margin: 30px 0;
+}
+.main__grid2 {
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.main__grid2 p {
+  grid-column: 3/11;
+}
+.main__grid2 p:last-child {
+  line-height: 24px;
+}
+.main__techLogo {
+  grid-column: 3/11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main__techLogo img {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -o-object-fit: none;
+     object-fit: none;
+}
+.main__grid3 {
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 150px;
+}
+.main__grid3 img {
+  grid-column: 1/5;
+}
+.main__grid3__text {
+  grid-column: 6/12;
+}
+.main__grid3 .ceo {
+  font-size: 14px;
+  line-height: 28px;
+}
+.main__grid3 .quote {
+  display: inline-block;
+  color: #E92F03;
+  font-size: 180px;
+  -webkit-transform: rotate(180deg) translateY(-20px);
+          transform: rotate(180deg) translateY(-20px);
 }/*# sourceMappingURL=styles.css.map */
