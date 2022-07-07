@@ -412,4 +412,95 @@ footer {
   max-width: 100%;
   height: calc(100vh - 120px);
   background-color: #353534;
+  margin-top: 200px;
+}
+footer .footerContainer {
+  width: 1100px;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #838383;
+  font-family: "Montserrat", sans-serif;
+}
+footer .footerContainer h3 {
+  font-size: 26px;
+}
+footer .footerContainer__row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 50px auto;
+}
+footer .footerContainer__row__explore {
+  grid-column: 1/3;
+}
+footer .footerContainer__row__explore h4 {
+  padding: 20px 0;
+}
+footer .footerContainer__row__explore h4, footer .footerContainer__row__explore p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+footer .footerContainer__row__explore p {
+  color: #FFFFFF;
+}
+footer .footerContainer__row__explore__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footerContainer__row__newsletter {
+  grid-column: 4/9;
+}
+footer .footerContainer__row__newsletter__form {
+  padding: 20px 0;
+}
+footer .footerContainer__row__newsletter__form input, footer .footerContainer__row__newsletter__form button {
+  padding: 10px;
+  background-color: #353534;
+  color: #838383;
+  border: 1px solid #838383;
+}
+footer .footerContainer__row__newsletter__form button {
+  background-color: #838383;
+  color: #FFFFFF;
+  margin-left: -5px;
+}
+footer .footerContainer__row__adres {
+  grid-column: 10/13;
+}
+footer .footerContainer__row__adres__logo {
+  width: 200px;
+  height: 30px;
+}
+footer .footerContainer__row__adres__logo img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .footerContainer__row__adres__city {
+  padding: 20px 0;
+}
+footer .footerContainer__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #FFFFFF;
 }/*# sourceMappingURL=styles.css.map */
