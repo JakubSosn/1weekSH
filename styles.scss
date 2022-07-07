@@ -69,6 +69,7 @@ $font-roboto: 'Roboto', sans-serif;
   height: 120px;
   background-color: $color-y;
   display: flex;
+  flex-wrap: nowrap;
   padding: 40px 40px 40px 50px;
   justify-content: space-between;
   position: sticky;
@@ -78,6 +79,8 @@ $font-roboto: 'Roboto', sans-serif;
   align-items: center;
   z-index: 1;
   background-image: url('../img/background.jpg');
+
+
 
   &__logo {
     width: 190px;
@@ -125,7 +128,33 @@ $font-roboto: 'Roboto', sans-serif;
     }
   }
 }
-.top__container {
+@media screen and (max-width: 1200px) {
+  .top {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: right;
+  }
+}
+@media screen and (max-width: 940px) {
+    .top {
+      justify-content: center;
+    }
+    .top__nav {
+      padding: 15px 0;
+
+      li {
+        flex-grow: 1;
+      }
+    }
+}
+@media screen and (max-width: 700px) {
+    .top__nav {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+}
+
+  .top__container {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
@@ -142,7 +171,8 @@ $font-roboto: 'Roboto', sans-serif;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: auto 0;
+    padding-top: 120px;
+    // margin: auto 0;
 
     &__text {
       width: 800px;
@@ -163,8 +193,16 @@ $font-roboto: 'Roboto', sans-serif;
   }
 
 }
-
-
+@media screen and (max-width: 940px) {
+  .top__main__text {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .top__main__text {
+    font-size: 32px;
+  }
+}
 .main {
   width: 1100px;
   max-width: 100%;
@@ -179,7 +217,7 @@ $font-roboto: 'Roboto', sans-serif;
     align-items: center;
     font-family: $font-monstserrat;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 30px;
 
     
     &__col1 {
@@ -259,7 +297,7 @@ $font-roboto: 'Roboto', sans-serif;
     }
   }
   &__grid4 {
-    width: 750px;
+    max-width: 750px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -328,7 +366,7 @@ $font-roboto: 'Roboto', sans-serif;
     }
   }
   &__grid7 {
-    width: 750px;
+    max-width: 750px;
     height: auto;
     font-size: 15px;
     line-height: 24px;
@@ -337,7 +375,34 @@ $font-roboto: 'Roboto', sans-serif;
   }
 
 }
+@media screen and (max-width: 940px) {
+  .main__grid1 {
+    &__col2 {
+      grid-column: 5 / 7;
+    }
+    &__col3 {
+      grid-column: 8 / 12;
+    }
+  }
+  .main__techLogo {
+    grid-column: 1 / 12;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main__grid1 {
+    align-items: flex-end;
 
+    &__col2 {
+      grid-column: 4 / 6;
+    }
+    &__col3 {
+      grid-column: 7 / 12;
+    }
+  }
+  .main__techLogo {
+    grid-column: 1 / 12;
+  }
+}
 .main__bg-photo {
   width: 100vw;
   max-width: 100%;
@@ -349,7 +414,7 @@ $font-roboto: 'Roboto', sans-serif;
 
 }
   .main__bottom {
-    width: 750px;
+    max-width: 750px;
     height: auto;
     display: flex;
 
@@ -425,6 +490,7 @@ footer {
   height: calc(100vh - 120px);
   background-color: #353534;
   margin-top: 200px;
+  overflow: hidden;
 
   .footerContainer {
       width: 1100px;
@@ -466,6 +532,10 @@ footer {
         &__col {
           display: flex;
           justify-content: space-between;
+
+          p {
+            padding: 2px;
+          }
         }
       }
 
@@ -486,6 +556,7 @@ footer {
             background-color: #838383;
             color: #FFFFFF;
             margin-left: -5px;
+            cursor: pointer;
           }
         }
       }
@@ -518,3 +589,4 @@ footer {
     }
   }
 }
+
