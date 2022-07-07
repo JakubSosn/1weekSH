@@ -375,7 +375,7 @@ $font-roboto: 'Roboto', sans-serif;
   grid-template-columns: repeat(12, 1fr);
   margin: 0 auto;
 
-  h1 {
+  .h1 {
     grid-column: 2 / 12;
     padding: 20px 0;
     font-family: $font-monstserrat;
