@@ -116,7 +116,7 @@
 }
 .top__nav__button {
   background-color: #E92F03;
-  padding: 20px 20px;
+  padding: 20px;
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
 }
@@ -158,6 +158,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 10px 0;
+  }
+
+  .top__nav__button {
+    padding: 10px;
   }
 }
 .top__container {
@@ -218,7 +222,7 @@
   }
 
   .top__main__text {
-    padding: 0 10px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -673,8 +677,6 @@ footer .footerContainer__column {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin: auto 0;
   }
 }/*# sourceMappingURL=styles.css.map */

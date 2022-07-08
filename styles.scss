@@ -117,7 +117,7 @@ $font-roboto: 'Roboto', sans-serif;
 
     &__button {
       background-color: $color-red;
-      padding: 20px 20px;
+      padding: 20px;
       color: #FFFFFF;
       font-family: $font-monstserrat;
     }
@@ -151,6 +151,10 @@ $font-roboto: 'Roboto', sans-serif;
     .top__nav {
       flex-direction: column;
       padding: 10px 0;
+    }
+
+    .top__nav__button {
+      padding: 10px;
     }
 }
 
@@ -204,7 +208,8 @@ $font-roboto: 'Roboto', sans-serif;
   }
   
   .top__main__text {
-    padding: 0 10px;
+    padding: 10px;
+
   }
 }
 @media screen and (max-width: 700px) {
@@ -651,6 +656,6 @@ footer {
   .bottom .ceoInfo {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: auto 0;
   }
 }
