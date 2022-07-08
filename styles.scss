@@ -8,8 +8,8 @@ $color-dg:#353534;
 $color-y: #FFF300;
 $color-nb:#201B19;
 
-$font-monstserrat: 'Montserrat', sans-serif;
-$font-roboto: 'Roboto', sans-serif;
+$ff-primary: 'Montserrat', sans-serif;
+$ff-secondary: 'Roboto', sans-serif;
 
 * {
   margin: 0;
@@ -20,15 +20,15 @@ $font-roboto: 'Roboto', sans-serif;
 }
 
 .ff-monstserrat {
-  font-family: $font-monstserrat;
+  font-family: $ff-primary;
 }
 
 .ff-roboto {
-  font-family: $font-roboto;
+  font-family: $ff-secondary;
 }
 
 .ff-robotoLightItalic {
-  font-family: $font-roboto;
+  font-family: $ff-secondary;
   font-weight: 300;
   font-style: italic;
 }
@@ -97,7 +97,7 @@ $font-roboto: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     font-size: 1rem;
-    font-family: $font-monstserrat;
+    font-family: $ff-primary;
     font-weight: 400;
     flex: 1;
     justify-content: flex-end;
@@ -119,7 +119,7 @@ $font-roboto: 'Roboto', sans-serif;
       background-color: $color-red;
       padding: 20px;
       color: #FFFFFF;
-      font-family: $font-monstserrat;
+      font-family: $ff-primary;
     }
 
     &__button:hover {
@@ -181,7 +181,7 @@ $font-roboto: 'Roboto', sans-serif;
     &__text {
       max-width: 800px;
       font-size: 60px;
-      font-family: $font-monstserrat;
+      font-family: $ff-primary;
       font-weight: 800;
       line-height: 77px;
     }
@@ -189,7 +189,7 @@ $font-roboto: 'Roboto', sans-serif;
 
 
   &__h2 {
-    font-family: $font-monstserrat;
+    font-family: $ff-primary;
     font-weight: 400;
     font-size: 14px;
     line-height: 36px;
@@ -233,7 +233,7 @@ $font-roboto: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
-    font-family: $font-monstserrat;
+    font-family: $ff-primary;
     font-size: 14px;
     line-height: 30px;
 
@@ -374,13 +374,13 @@ $font-roboto: 'Roboto', sans-serif;
     align-items: center;
 
     &__col1, &__col2, &__col3 {
-      font-family: $font-roboto;
+      font-family: $ff-secondary;
       font-size: 100px;
       font-weight: 100;
     }
 
     &__row1, &__row2, &__row3 {
-      font-family: $font-monstserrat;
+      font-family: $ff-primary;
       font-size: 14px;
       font-weight: 500;
       line-height: 18px;
@@ -422,7 +422,7 @@ $font-roboto: 'Roboto', sans-serif;
     height: auto;
     font-size: 15px;
     line-height: 24px;
-    font-family: $font-roboto;
+    font-family: $ff-secondary;
     margin: 180px auto;
   }
 
@@ -476,14 +476,14 @@ $font-roboto: 'Roboto', sans-serif;
       height: 30px;
       background-color: #E92F03;
       border-radius: 25px;
-      font-family: $font-roboto;
+      font-family: $ff-secondary;
       font-size: 16px;
       line-height: 26px;
       text-align: center;
     }
 
     p {
-      font-size: $font-roboto;
+      font-size: $ff-secondary;
       font-size: 16px;
       padding-top: 10px;
     }
@@ -494,11 +494,12 @@ $font-roboto: 'Roboto', sans-serif;
   // grid-template-columns: repeat(12, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(91px, 1fr));
   margin: 0 auto;
+  padding-left: 15px;
 
   .h1 {
     grid-column: 2 / 12;
     padding: 20px 0;
-    font-family: $font-monstserrat;
+    font-family: $ff-primary;
     font-size: 60px;
     font-weight: 700;
     line-height: 77px;
@@ -507,10 +508,10 @@ $font-roboto: 'Roboto', sans-serif;
   .ceoInfo {
     grid-column: 2 / 12;
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(90px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     justify-items: left;
     align-items: flex-start;
-    font-family: $font-monstserrat;
+    font-family: $ff-primary;
     font-size: 18px;
     line-height: 25px;
 
@@ -523,7 +524,7 @@ $font-roboto: 'Roboto', sans-serif;
     }
 
     &__con, &__map {
-      font-family: $font-roboto;
+      font-family: $ff-secondary;
       font-size: 15px;
       line-height: 21px;
       padding-top: 20px;
@@ -537,22 +538,20 @@ $font-roboto: 'Roboto', sans-serif;
 }
 
 footer {
-  width: 100vw;
-  max-width: 100%;
-  height: calc(100vh - 120px);
+  max-width: 100vw;
+  min-height: calc(100vh - 120px);
   background-color: #353534;
   margin-top: 200px;
   overflow: hidden;
 
   .footerContainer {
-      width: 1100px;
-      max-width: 100%;
-      height: 100vh;
+      max-width: 1100px;
+      min-height: 100vh;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
       color: #838383;
-      font-family: $font-monstserrat;
+      font-family: $ff-primary;
 
       h3 {
         font-size: 26px;
@@ -573,7 +572,7 @@ footer {
         }
 
         h4, p {
-          font-family: $font-roboto;
+          font-family: $ff-secondary;
           font-weight: 700;
         }
 
@@ -646,6 +645,17 @@ footer {
   .main__grid4, .main__grid7 {
     padding: 0 10px;
   }
+
+  footer .footerContainer__row {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footerContainer__row__explore__col {
+    justify-content: space-around;
+  }
+  footer .footerContainer__row__adres {
+    padding-top: 20px;
+  }
 }
 @media screen and (max-width: 500px) {
   .bottom {
@@ -656,6 +666,8 @@ footer {
   .bottom .ceoInfo {
     display: flex;
     flex-direction: column;
-    margin: auto 0;
+    margin: 0 auto;
   }
+
 }
+
